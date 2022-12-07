@@ -1,0 +1,64 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+div#leftSidebar{
+	position: fixed;
+	width: 200px;
+	height: 100%;
+	background: grey;
+	left: -200px;
+	transition: all .375s linear;
+	display: flex;
+	flex-direction: column;
+}
+
+#leftSidebar.active {
+	left: 0px;
+}
+div#leftSidebar div.kutu:hover {
+	padding: 20px;
+	background-color: #c7ecee;
+}
+
+div#leftSidebar div.kutu a{
+	cursor: pointer;
+	transition: all 0.375s linear;
+	color: black;
+	font-family: sans-serif;
+	text-decoration: none;
+	padding-right: 70px; 
+}
+
+div.kutu{
+	width: 90%;
+	height: 30px;
+	padding: 10px 10px;
+	border-bottom: 1px solid rgba(173,216,230,.7);
+	cursor: pointer;
+	transition: all 0.375s linear;
+}
+
+.leftSidebarButton {
+	position: absolute;
+	left: 200px;
+	top: 0px;
+	cursor: pointer;
+}
+.leftSidebarButton:before {
+	content: "\f0c9";
+	font-family: FontAwesome;
+	color: black;
+	position: absolute;
+	font-size: 36.1px;
+	background-color: #a5b1c2;
+	padding: 5px 10px;
+	transition:  all 0.375s linear;
+}
+.leftSidebarButton:hover{
+	font-size: 40;
+	background-color: #c7ecee;	
+}
+.leftSidebarButton:hover:before{
+	background-color: #c7ecee;	
+}
